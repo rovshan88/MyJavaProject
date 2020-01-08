@@ -1,5 +1,7 @@
 package Gucci;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class hWcarMood {
@@ -7,30 +9,26 @@ public class hWcarMood {
 
 
         int [] studentInClass = new int[5];
-        studentInClass[0] = 25;
-        studentInClass[1] = 20;
-        studentInClass[2] = 100;
-        studentInClass[3] = 25;
-        studentInClass[4] = 20;
+        studentInClass[0] = 1;
+        studentInClass[1] = 1;
+        studentInClass[2] = 1;
+        studentInClass[3] = 2;
+        studentInClass[4] = 2;
         int arrLenght = studentInClass.length;
         int sumArr = IntStream.of(studentInClass).sum();
         int averStu = sumArr/arrLenght;
-        int studI = 0;
-        boolean stud2 = studI < 0;
+        //String reverse = studentInClass.
+
+        if (averStu >25) {
+            System.out.println (Arrays.toString(studentInClass));
+        } else {
+            System.out.println ("Print index" + studentInClass[arrLenght-2] + ", " + studentInClass[arrLenght-3] + ", " +
+                    studentInClass[arrLenght-4] + ", " + studentInClass[arrLenght-5]);
+        }
 
 
 
-        //int stud1 = studentInClass
 
-
-
-
-
-
-//        If you average of stored numbers greater than 25
-//        Display Array from index 0 to last
-//        Otherwise
-//        Display Array from index last to 0
 
     }
 }
