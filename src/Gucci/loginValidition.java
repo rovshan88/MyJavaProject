@@ -23,7 +23,7 @@ public class loginValidition {
         //correct password is entered
         for (int i = 0; i < 5; i++) {
             //checking if actual password is not equal to expected password
-            if (!actualPassword.equals(expectedPassword) && !actualUserName.equals(expectedUserName)) {
+            if (!actualPassword.equals(expectedPassword) || !actualUserName.equals(expectedUserName)) {
                 //subtracting the count by iteration so user will have less tries (-1 every miss tries)
                 int count = 5 - i;
                 //console message to user to enter valid password
@@ -31,7 +31,7 @@ public class loginValidition {
                 //console message to let user know how many more tries he has left with
                 System.out.println("You have " + count + " more tries");
                 //letting user to update the actualPassword value with new input from console
-                actualPassword = scanUserName.nextLine();
+                actualUserName = scanUserName.nextLine();
                 actualPassword = scanPassword.nextLine();
                 //if count equals to 9, then notifying user with custom message
                 if (i == 4) {
